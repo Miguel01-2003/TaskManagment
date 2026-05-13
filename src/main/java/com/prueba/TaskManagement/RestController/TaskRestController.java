@@ -98,7 +98,7 @@ public class TaskRestController {
     
     
     @PostMapping("/prueba")
-    public ResponseEntity Prueba(@RequestBody Task task){
+    public ResponseEntity Prueba(@Valid @RequestBody Task task){
         Result Resultado = new Result();
         
         Resultado.object = task;
