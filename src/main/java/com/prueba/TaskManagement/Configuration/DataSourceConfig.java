@@ -1,6 +1,7 @@
 package com.prueba.TaskManagement.Configuration;
 
 import javax.sql.DataSource;
+import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -16,5 +17,10 @@ public class DataSourceConfig {
         dataSource.setPassword("password1");
         
         return dataSource;
+    }
+    
+    @Bean
+    public ModelMapper modelMapper(){
+        return new ModelMapper();
     }
 }

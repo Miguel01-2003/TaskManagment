@@ -13,7 +13,7 @@ public class Status {
         this.Id = Id;
         this.Name = Name;
     }
-s
+
     public int getId() {
         return Id;
     }
