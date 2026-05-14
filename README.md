@@ -47,12 +47,13 @@ Localiza la función `dataSource()` y actualiza las siguientes credenciales:
 
 El RestController principal está mapeado en /api/tasks.
 A continuación los detalles:
-Método,Endpoint,Descripción
-POST,/api/tasks,Crea una nueva tarea en el sistema.
-GET,/api/tasks,Lista todas las tareas registradas.
-GET,/api/tasks/{id},Obtiene el detalle de una tarea específica por su ID.
-PUT,/api/tasks/{id},Actualiza los datos de una tarea existente.
-DELETE,/api/tasks/{id},Elimina de forma lógica/física una tarea por ID.
+| Método | Endpoint | Descripción |
+|--------------|--------------|--------------|
+| GET | /api/tasks | Lista todas las tareas registradas. |
+| GET | /api/tasks/{id} | Obtiene el detalle de una tarea específica por su ID. |
+| POST | /api/tasks/{id} | Agrega una nueva tarea. |
+| PUT | /api/tasks/{id} | Actualiza los datos de una tarea existente. |
+| DELETE | /api/tasks/{id} | Elimina de forma física una tarea por ID. |
 
 ---
 
