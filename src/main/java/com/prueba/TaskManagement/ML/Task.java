@@ -1,7 +1,9 @@
 package com.prueba.TaskManagement.ML;
 
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 public class Task {
@@ -11,10 +13,10 @@ public class Task {
     @NotEmpty(message = "El titulo no puede estar vacio")
     private String Title;
 
-    @Max(value = 250, message = "La descripcion de be contener maximo 250 caracteres")
+    @Size(max = 250, message = "La Descripcion debe tener como máximo 250 caracteres")
     private String Description;
 
-    @NotEmpty(message = "El Status no puede estar vacio")
+    @Valid
     public Status Status;
 
     private LocalDateTime CreationDate;

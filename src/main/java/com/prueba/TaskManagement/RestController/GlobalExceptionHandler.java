@@ -18,7 +18,7 @@ public class GlobalExceptionHandler {
         Result Resultado = new Result();
         
         Resultado.correct = false;
-        Resultado.ErrorMessage = "Problema con el servidor"+ ex.getLocalizedMessage();
+        Resultado.ErrorMessage = "Problema con el servidor "+ ex.getLocalizedMessage();
         Resultado.ex = ex;
         
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Resultado);
@@ -30,7 +30,6 @@ public class GlobalExceptionHandler {
         
         Resultado.correct = false;
         Resultado.ErrorMessage = "El método: " + ex.getMethod() + " no tiene soporte.";
-        Resultado.ex = ex;
         
         return ResponseEntity.status(HttpStatus.METHOD_NOT_ALLOWED).body(Resultado);
     

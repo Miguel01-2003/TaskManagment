@@ -1,7 +1,10 @@
 package com.prueba.TaskManagement.ML;
 
+import jakarta.validation.constraints.NotNull;
+
 public class Status {
 
+    @NotNull(message = "La tarea debe tener un status")
     private int Id;
 
     private String Name;
