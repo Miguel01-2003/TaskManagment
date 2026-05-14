@@ -1,0 +1,24 @@
+CREATE TABLE Status(
+    Id NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Task(
+    Id NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Title VARCHAR(50) NOT NULL,
+    Description VARCHAR(250) NULL,
+    IdStatus NUMBER NOT NULL,
+    CreationDate DATE NOT NULL,
+    CONSTRAINT fk_IdStatus
+    FOREIGN KEY (IdStatus)
+    REFERENCES Status (Id)
+);
+
+INSERT INTO Status (Name) VALUES ('Pending');
+INSERT INTO Status (Name) VALUES ('InProgress');
+INSERT INTO Status (Name) VALUES ('Completed');
+
+SELECT Id, Name FROM Status;
+
+
+
