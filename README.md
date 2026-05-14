@@ -93,4 +93,3 @@ Capas del Sistema:
 - ML / DTO (Modelos de Validación): Se implementó una doble capa de modelos para separar los objetos de persistencia (JPA) de los objetos de transferencia de datos. Esto permite aplicar validaciones estrictas en la entrada sin afectar la estructura de la base de datos.
 
 - Configuration: Contiene las definiciones de Beans de Spring, seguridad y la configuración personalizada del DataSource.
-    return dataSource;
