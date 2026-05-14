@@ -51,7 +51,7 @@ A continuación los detalles:
 |--------------|--------------|--------------|
 | GET | /api/tasks | Lista todas las tareas registradas. |
 | GET | /api/tasks/{id} | Obtiene el detalle de una tarea específica por su ID. |
-| POST | /api/tasks/{id} | Agrega una nueva tarea. |
+| POST | /api/tasks | Agrega una nueva tarea. |
 | PUT | /api/tasks/{id} | Actualiza los datos de una tarea existente. |
 | DELETE | /api/tasks/{id} | Elimina de forma física una tarea por ID. |
 
